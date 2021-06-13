@@ -1,5 +1,9 @@
-#create a function that is for caching the mean of the vetor
-#in this case matrix is the vector
+##these functions were created to show how the initial data
+##accumulates another data called cached data
+
+##create a function that is for caching the mean of the vector
+##in this case matrix is the vector
+##here there are two functions that will be tested
 makeCacheMatrix <- function(x = matrix()){
   inv <- NULL      #inverse value printed as NULL
   set <- function(y){
@@ -11,6 +15,9 @@ makeCacheMatrix <- function(x = matrix()){
   getInverse <- function () {inv}
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
+
+##about the function
+## This is a function which could be used to get the cached datae
 
 cacheSolve <- function(x, ...){     ##get the cache data
   inv <- x$getInverse()
